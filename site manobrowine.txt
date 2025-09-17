@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mano Bwownie</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    .logo-font {
+      font-family: 'Pacifico', cursive;
+    }
+  </style>
+</head>
+<body class="bg-[#fff8f2] text-[#4b2e2e]">
+  <!-- Navbar -->
+  <header class="bg-[#d8b08c] p-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-3xl logo-font">Mano Bwownie</h1>
+      <nav class="space-x-4 text-lg">
+        <a href="#home" class="hover:underline">Home</a>
+        <a href="#sobre" class="hover:underline">Sobre</a>
+        <a href="#produtos" class="hover:underline">Brownies</a>
+        <a href="#pedidos" class="hover:underline">Pedidos</a>
+        <a href="#contato" class="hover:underline">Contato</a>
+        <a href="#admin" class="hover:underline text-red-700 font-semibold">Painel</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="text-center py-20 bg-[#fbe8d3]">
+    <h2 class="text-4xl font-bold mb-4">Brownies Artesanais e Irresistíveis 🍫</h2>
+    <p class="text-lg mb-6">Feitos com amor, chocolate de verdade e aquele toque de quebrada 😎</p>
+    <a href="#pedidos" class="bg-[#8b5e3c] text-white px-6 py-3 rounded-full hover:bg-[#73452b] transition">Quero Pedir Agora</a>
+  </section>
+
+  <!-- Sobre nós -->
+  <section id="sobre" class="py-16 px-4 max-w-4xl mx-auto">
+    <h3 class="text-3xl font-bold mb-4">Sobre a Mano Bwownie</h3>
+    <p class="text-lg">A Mano Bwownie nasceu da vontade de levar o melhor brownie do bairro pra todo mundo. Usamos ingredientes selecionados, receitas originais e muito carinho em cada fornada. Aqui o chocolate é de verdade e o sabor é inesquecível!</p>
+  </section>
+
+  <!-- Produtos -->
+  <section id="produtos" class="py-16 px-4 bg-[#fff2e0]">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold mb-8 text-center">Nossos Brownies</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="bg-white p-4 rounded-xl shadow-md">
+          <img src="https://source.unsplash.com/400x300/?brownie" alt="Brownie Clássico" class="rounded-md mb-2">
+          <h4 class="text-xl font-semibold">Brownie Clássico</h4>
+          <p>Chocolate intenso e textura perfeita.</p>
+        </div>
+        <div class="bg-white p-4 rounded-xl shadow-md">
+          <img src="https://source.unsplash.com/400x300/?chocolate-dessert" alt="Brownie com Nutella" class="rounded-md mb-2">
+          <h4 class="text-xl font-semibold">Brownie com Nutella</h4>
+          <p>Recheado generosamente com Nutella cremosa.</p>
+        </div>
+        <div class="bg-white p-4 rounded-xl shadow-md">
+          <img src="https://source.unsplash.com/400x300/?dessert" alt="Brownie de Doce de Leite" class="rounded-md mb-2">
+          <h4 class="text-xl font-semibold">Brownie de Doce de Leite</h4>
+          <p>Um toque brasileiro com muito sabor!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pedidos -->
+  <section id="pedidos" class="py-16 px-4 text-center">
+    <h3 class="text-3xl font-bold mb-6">Faça seu Pedido</h3>
+    <p class="mb-4">Peça direto pelo WhatsApp, iFood ou pague com PIX e envie o comprovante.</p>
+    <div class="space-x-4 mb-8">
+      <a href="#agradecimento" class="bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600">Finalizar Pedido</a>
+      <a href="https://wa.me/5543991852010" class="bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600">WhatsApp 1</a>
+      <a href="https://wa.me/5543991103107" class="bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600">WhatsApp 2</a>
+      <a href="https://www.ifood.com.br" class="bg-red-500 text-white px-6 py-3 rounded-full hover:bg-red-600">iFood</a>
+    </div>
+    <div class="inline-block bg-white p-6 rounded-lg shadow-md">
+      <h4 class="text-xl font-semibold mb-2">Pague com PIX</h4>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/QR_code_sample.svg" alt="QR Code PIX" class="w-48 h-48 mx-auto mb-2">
+      <p class="text-sm">Chave PIX: <strong>manobwownie@pix.com</strong></p>
+      <p class="text-sm">Envie o comprovante no WhatsApp após o pagamento.</p>
+    </div>
+  </section>
+
+  <!-- Página de agradecimento -->
+  <section id="agradecimento" class="py-20 text-center bg-green-100">
+    <h3 class="text-4xl font-bold text-green-800 mb-4">Pedido realizado com sucesso! 🎉</h3>
+    <p class="text-lg">Obrigado por escolher a Mano Bwownie. Logo logo o melhor brownie da sua vida chega até você 🍫</p>
+  </section>
+
+  <!-- Painel Administrativo -->
+  <section id="admin" class="py-20 px-6 bg-[#fbe8d3]">
+    <h3 class="text-3xl font-bold text-center mb-6">Painel Administrativo</h3>
+    <div class="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow">
+      <p class="mb-4 text-gray-700">📋 Lista de pedidos (exemplo):</p>
+      <ul class="space-y-2">
+        <li class="border p-2 rounded bg-[#fff8f2]">Pedido #001 - Brownie Clássico - Cliente: João</li>
+        <li class="border p-2 rounded bg-[#fff8f2]">Pedido #002 - Brownie com Nutella - Cliente: Maria</li>
+        <li class="border p-2 rounded bg-[#fff8f2]">Pedido #003 - Brownie de Doce de Leite - Cliente: Ana</li>
+      </ul>
+      <p class="text-sm text-gray-500 mt-4">* Esta é uma versão demonstrativa. Para versão funcional, é necessário banco de dados.</p>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <footer id="contato" class="bg-[#d8b08c] p-6 text-center">
+    <p class="mb-2">📞 (43) 99185-2010 | 📞 (43) 99110-3107 | 📧 contato@manobwownie.com</p>
+    <p class="mb-2">📸 @manobwownie</p>
+    <p>📍 Rua do Chocolate, 123 - Brownielândia</p>
+  </footer>
+</body>
+</html>
